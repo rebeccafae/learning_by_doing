@@ -19,5 +19,7 @@ puts "  #{seconds_in_week} seconds in a week."
 
 puts ''
 seconds_in_a_year = seconds_in_day * 365
-puts "That means when you turn 20, you've been alive for #{seconds_in_a_year * 20} seconds,"
-puts "and if you make it to 100, you will have lived #{seconds_in_a_year * 100} seconds. Make them count!"
+print "That means when you turn 20, you've been alive "
+puts "for #{seconds_in_a_year * 20} seconds,"
+print 'and if you make it to 100, you will have '
+puts "lived #{seconds_in_a_year * 100} seconds. Make them count!"
