@@ -31,7 +31,7 @@ A vacation is when you take a trip to some #{adj} place
 with your #{adj_2} family. Usually you go to some place
 that is near a/an #{noun} or up on a/an #{noun_2}.
 A good vacation place is one where you can ride #{plural_noun}
-or play #{game} or go hunting for #{plural_noun_2} . I like
+or play #{game} or go hunting for #{plural_noun_2}. I like
 to spend my time #{verb_ing} or #{verb_ing_2}.
 When parents go on a vacation, they spend their time eating
 three #{plural_noun_3} a day, and fathers play golf, and mothers
