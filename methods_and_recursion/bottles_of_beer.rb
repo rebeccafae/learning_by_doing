@@ -2,21 +2,27 @@
 
 def song(num_bottles)
   if num_bottles > 2
-    puts "#{num_bottles} bottles of beer on the wall, #{num_bottles} bottles of beer."
+    print "#{num_bottles} bottles of beer on the wall, "
+    puts "#{num_bottles} bottles of beer."
     num_bottles -= 1
-    puts "Take one down and pass it around, #{num_bottles} bottles of beer on the wall."
+    print 'Take one down and pass it around, '
+    puts "#{num_bottles} bottles of beer on the wall."
     puts ''
     song(num_bottles)
   elsif num_bottles == 2
-    puts "#{num_bottles} bottles of beer on the wall, #{num_bottles} bottles of beer."
+    print "#{num_bottles} bottles of beer on the wall, "
+    puts "#{num_bottles} bottles of beer."
     num_bottles -= 1
-    puts "Take one down and pass it around, #{num_bottles} bottle of beer on the wall."
+    print 'Take one down and pass it around, '
+    puts "#{num_bottles} bottle of beer on the wall."
     puts ''
     song(num_bottles)
   elsif num_bottles == 1
-    puts "#{num_bottles} bottle of beer on the wall, #{num_bottles} bottle of beer."
+    print "#{num_bottles} bottle of beer on the wall, "
+    puts "#{num_bottles} bottle of beer."
     num_bottles -= 1
-    puts 'Take one down and pass it around, no more bottles of beer on the wall.'
+    print 'Take one down and pass it around, '
+    puts 'no more bottles of beer on the wall.'
     puts ''
     puts song(num_bottles)
   else
