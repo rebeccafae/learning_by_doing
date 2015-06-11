@@ -25,8 +25,7 @@ adj_3 = ask_question('another adjective')
 number = ask_question('a number')
 plural_noun_4 = ask_question('another plural noun')
 
-# rubocop:disable Style/StringLiterals
-puts """
+puts <<END_OF_MADLIB
 A vacation is when you take a trip to some #{adj} place
 with your #{adj_2} family. Usually you go to some place
 that is near a/an #{noun} or up on a/an #{noun_2}.
@@ -43,5 +42,4 @@ need vacations more than kids because parents are always very
 #{adj_3} and because they have to work #{number}
 hours every day all year making enough #{plural_noun_4} to pay
 for the vacation.
-"""
-# rubocop:enable Style/StringLiterals
+END_OF_MADLIB
