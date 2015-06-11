@@ -8,4 +8,4 @@ puts string.upcase
 puts string.gsub('string', "'string'").capitalize
 puts "The string '#{string}' has #{string.length} characters."
 puts string.reverse
-puts string.replace('practice practice practice!')
+puts string.slice('practice' + ' ') * 2 + ('practice!')
