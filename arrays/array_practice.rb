@@ -16,9 +16,9 @@ print "and #{numbers_array.delete(7)} from the array, "
 puts "we're left with #{numbers_array.to_s.gsub(' ', '')}"
 print "If we add #{numbers_array.unshift(5).first} at the beginning of "
 # same array output as line 16 but trying it a different way
-puts "the array, we're left with [#{numbers_array.join(', ')}]"
+puts "the array, we're left with [#{numbers_array.join(',')}]"
 print "If we add #{numbers_array.push(6).last} at the end of the array, "
-puts "we're left with #{numbers_array.to_s.gsub(' ', '')}"
+puts "we're left with [#{numbers_array.join(',')}]"
 puts "Only the elements #{numbers_array.select { |x| x > 8 } } are > 8."
 print 'If we remove all the elements, then the length of the array is '
 puts numbers_array.clear.length
