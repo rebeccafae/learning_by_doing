@@ -1,13 +1,17 @@
 #!/usr/bin/env ruby
 
 def pluralize(number, string)
-  if number > 1
-    "#{number} #{string}s"
-  elsif number == 0
-    'no more bottles'
-  else
-    "#{number} #{string}"
-  end
+  number_string = number >= 1 ? number : 'no more'
+  string += 's' if number > 1 || number == 0
+  "#{number_string} #{string}"
+  # old code I left in here for reference
+  # if number > 1
+  #   "#{number} #{string}s"
+  # elsif number == 0
+  #   'no more bottles'
+  # else
+  #   "#{number} #{string}"
+  # end
 end
 
 def ending
