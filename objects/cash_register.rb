@@ -4,9 +4,11 @@ class CashRegister
   def total
     @owed.to_f
   end
+
   def purchase(price)
     @owed = price + total
   end
+
   def pay(amount_paid)
     change = amount_paid - @owed.to_f
     if change >= 0
