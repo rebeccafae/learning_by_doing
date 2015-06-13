@@ -11,7 +11,7 @@ class CashRegister
   end
 
   def purchase(price)
-    @owed = price + @owed
+    @owed += price
   end
 
   def pay(amount_paid)
