@@ -1,12 +1,17 @@
 #!/usr/bin/env ruby
 
 class CashRegister
+
+  def initialize
+    @owed = 0.0
+  end
+
   def total
-    @owed.to_f
+    '%.2f' % @owed
   end
 
   def purchase(price)
-    @owed = price + total
+    @owed = price + @owed
   end
 
   def pay(amount_paid)
