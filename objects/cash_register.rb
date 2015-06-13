@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
+# here's my cash register
 class CashRegister
-
   def initialize
     @owed = 0.0
   end
