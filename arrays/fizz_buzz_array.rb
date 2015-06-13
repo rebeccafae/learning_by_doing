@@ -2,10 +2,20 @@
 
 numbers = (1..100).to_a
 
-# this works but I don't think it's the way
-# I'm supposed to do the assignment
-fizzbuzz_array = numbers.map { |x| x % 3 == 0 && x % 5 == 0 ? 'FizzBuzz' : x }
-                 .map { |x| x % 5 == 0 ? 'Buzz' : x }
-                 .map { |x| x % 3 == 0 ? 'Fizz' : x }
+def fizz_buzz_or_num(number)
+  number % 3 == 0 && number % 5 == 0 ? 'FizzBuzz' : number
+end
+
+def buzz_or_number(number)
+  number % 5 == 0 ? 'Buzz' : number
+end
+
+def fizz_or_number(number)
+  number % 3 == 0 ? 'Fizz' : number
+end
+
+fizzbuzz_array = numbers.map { |number| fizz_buzz_or_num(number) }
+                 .map { |number| buzz_or_number(number) }
+                 .map { |number| fizz_or_number(number) }
 
 puts fizzbuzz_array
