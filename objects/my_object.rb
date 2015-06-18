@@ -25,11 +25,7 @@ class CoffeeMaker
   end
 
   def ready?
-    if water? && filter? && coffee_grounds?
-      true
-    else
-      false
-    end
+    errors.none?
   end
 
   def errors
@@ -69,8 +65,8 @@ class CoffeeMaker
 end
 
 coffee = CoffeeMaker.new
-puts coffee.add_water(2)
-puts coffee.add_coffee_grounds(2)
+puts coffee.add_water(0)
+puts coffee.add_coffee_grounds(0)
 puts coffee.add_filter
 coffee.ready?
 puts coffee.brew
