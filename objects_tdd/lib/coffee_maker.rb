@@ -26,3 +26,14 @@ class CoffeeMaker
     ready?
   end
 end
+
+coffee = CoffeeMaker.new
+puts coffee.ready?
+# it's not ready yet
+puts coffee.add_water(3)
+puts coffee.add_filter
+puts coffee.brew
+# it's still not ready, so it doesn't brew
+puts coffee.add_coffee_grounds(3)
+puts coffee.brew
+# now it can brew your coffee
