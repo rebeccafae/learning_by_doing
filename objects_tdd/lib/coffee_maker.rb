@@ -11,7 +11,7 @@ class CoffeeMaker
   end
 
   def add_filter
-    @filer = true
+    @filter = true
   end
 
   def add_coffee_grounds(amount)
